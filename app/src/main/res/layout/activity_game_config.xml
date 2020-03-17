@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.triviaapp.GameConfigActivity">
+
+    <ListView
+        android:id="@+id/categoryList"
+        android:layout_width="368dp"
+        android:layout_height="174dp"
+        android:layout_below="@+id/textView_name"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+
+    <ListView
+        android:id="@+id/difficultyList"
+        android:layout_width="294dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp" />
+
+    <Button
+        android:id="@+id/startGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/difficultyList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-63dp"
+        android:text="Start Game!" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Boundary_Line"
+        android:text="Select Difficulty:"
+        app:layout_constraintBottom_toTopOf="@+id/difficultyList"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Boundary_Line"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_below="@+id/categoryList"
+        android:text="----------------------------------------------------------------------------------------------------------"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryList"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <TextView
+        android:id="@+id/textViewhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Boundary_Line"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text=""
+
+        tools:layout_editor_absoluteX="282dp" />
+
+</RelativeLayout>
